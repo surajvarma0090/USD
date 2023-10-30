@@ -23,8 +23,6 @@ let run = async () => {
   let $ = await cheerio.load(res.data)
 
   let title = $('.fxKbKc').text()
-
-  console.log(title)
   let data = [{
     "USD": 1,
     "INR": title
